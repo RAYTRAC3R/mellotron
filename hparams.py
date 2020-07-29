@@ -100,6 +100,11 @@ def create_hparams(hparams_string=None, verbose=False):
         token_embedding_size=256,
         token_num=10,
         num_heads=8,
+        
+        # (GST) TorchMoji
+        torchMoji_attDim=2304,# published model uses 2304
+        torchMoji_linear=True,# load/save text infer linear layer.
+        torchMoji_training=True,# switch GST to torchMoji mode
 
         ################################
         # Optimization Hyperparameters #
